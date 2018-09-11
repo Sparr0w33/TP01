@@ -14,7 +14,7 @@ public class TestCalculator {
 
         //act = action
         int returnedResult = calculator.add(arg1,arg2);
-
+ //tettttts
         //Assert
         Assert.assertEquals(expectedResult, returnedResult);
     }
@@ -33,8 +33,19 @@ public class TestCalculator {
 
 
     }
+    @Test
+    public void faildTest()
+    {
 
+        int arg1 = 1;
+        int arg2 = 1;
+        int expectedResult = 3;
 
+        //act = action
+        int Result = calculator.add(arg1,arg2);
+        Assert.assertEquals(expectedResult, Result);
+
+    }
 
 
 }
